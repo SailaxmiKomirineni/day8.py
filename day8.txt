@@ -1,0 +1,74 @@
+1. What is time complexity?
+   Worst time taken to run an algorithms is called time complexcity. It is expressed in "n" using Big(O) notation.
+   => We doesn't consider constant (are negligible) in time complexcity. As "n" tends to infinite highest n is considered.
+  => 2*infinity == 2*n = n or infinity
+
+  ex1: If x = 6;
+      a = [1,2,3,4,5,6]
+      what is time complexcity to find "x"?
+      => O(n)
+      => best case -> 1 position
+      => average case -> in between
+      => worst case -> last position 6 it should expressed in "n"
+
+  ex2: nums = [1,2,3,4,5]
+       target = 
+       for i in range(len(nums)):
+          for j in range(i+1, len(nums)):
+             print(i+j)
+       what is time complexcity to find the target?
+       => O(n**2)
+
+        or
+        
+       for i in range(len(nums)):
+          for j in range(i+1, len(nums)):
+             print(i+j)
+       for k in range(i+1, len(nums)):
+             print(k)
+       => n**2 + n == n**2 (highest value of n is consider)
+       => O(n**2)
+
+  ex3: nums = [1,2,3,4,5]
+       target = 
+       for i in range(len(nums)):
+             print(i)
+       for j in range(i+1, len(nums)):
+             print(j)
+       what is time complexcity to find the target?
+       => n+n = 2n == n
+          constants are negligible.
+       => O(n)
+
+  ex4: nums = [1,2,3,4,5]
+       target = nums[0]
+       print(target)
+       what is time complexcity to find the target?
+       => Already we know the target. So we use 
+       => O(1)
+        
+   ex5: a = 1
+        b = 5
+        s = a+b
+       what is time complexcity to find the s?
+       => Already values are given. So we use 
+       => O(1)
+      
+    ex6: nums = [1,2,3,4,5]
+         target = 
+         if target in nums:
+            print("exist")
+         else:
+            print("not exist")
+       what is time complexcity to find the target?       
+       => O(n)
+
+2. Why do we ignore constants?
+   => Because "n" tends to infinity. infinity plus something would be infinity. Constants are negligible in infinity.
+      so constants are ignore near "n".
+  
+3.Why we only consider largest component time complexity in a Algorithm?
+  => To get efficiency and scalibility of an algorithm in all sides of algorithm and for decision making, 
+        so we focus on the larget value or component, 
+
+        
